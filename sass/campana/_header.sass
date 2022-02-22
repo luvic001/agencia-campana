@@ -1,0 +1,41 @@
+body
+  &.logged-in.admin-bar
+    header.site-header
+      top: 45px
+      +breakpoint(xs)
+        top: 32px
+    &.body-scrolled
+      header.site-header
+        top: 0
+        +breakpoint(sm)
+          top: 32px
+  &.body-scrolled
+    header.site-header
+      top: 0
+      background-color: $branco
+      +shadow(0 0 7px #bbbbbb)
+      .menu-toggle
+        span
+          background-color: #444444
+  header.site-header
+    position: fixed
+    width: 100%
+    +default_transition()
+    top: 0
+    z-index: 400
+    padding: 10px 1rem
+    +breakpoint(sm)
+      padding: 10px 2rem
+
+    .menu-toggle
+      display: block
+      width: 40px
+      span
+        margin-bottom: 6px
+        width: 100%
+        height: 2.25px
+        background-color: $branco
+        display: block
+        +default_transition()
+        &:last-child
+          margin-bottom: 0
