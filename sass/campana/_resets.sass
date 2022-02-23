@@ -1,0 +1,36 @@
+$vermelho: #EF383F
+.site-link
+  color: $vermelho
+  text-transform: uppercase
+  font-family: $font-default
+  font-weight: 700
+  line-height: 19px
+  +font-size(16px)
+  letter-spacing: 2px
+  &:after
+    margin-left: 7px
+    content: ''
+    width: 20px
+    display: inline-block
+    height: 1px
+    background-color: $vermelho
+    +default_transition()
+  &:hover
+    text-decoration: none
+    &:after
+      width: 30px
+.site-sections
+  .section-title
+    margin-bottom: 38px
+    h2
+      text-transform: uppercase
+      font-weight: 700
+      margin-bottom: 5px
+      +font-size(16px)
+    p
+      text-transform: uppercase
+      font-weight: 900
+      color: $vermelho
+      +font-size(26px)
+      +breakpoint(sm)
+        +font-size(40px)
