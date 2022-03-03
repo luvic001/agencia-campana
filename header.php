@@ -40,6 +40,8 @@ global $TEMPLATE_DIRECTORY_URI;
     <?= get_file('js/script.min.js') ?>
   </script>
 
+  <script src="https://kit.fontawesome.com/c454b0919f.js" crossorigin="anonymous"></script>
+
 </head>
 <body <?= body_class() ?>>
   

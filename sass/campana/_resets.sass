@@ -24,6 +24,8 @@ $vermelho: #EF383F
   padding: 50px 0
   +breakpoint(sm)
     padding: 100px 0
+  &.white-section
+    background-color: #ffffff
   .section-title
     margin-bottom: 38px
     h2
@@ -43,7 +45,38 @@ $vermelho: #EF383F
       +breakpoint(md)
         line-height: 49px
         +font-size(40px)
+    
+    &.color-reverse
+      p
+        color: $preto
+      h2
+        color: $vermelho
+    &.centerized
+      p, h2
+        text-align: center
 
+  .article-item
+    margin-top: 20px
+    margin-bottom: 20px
+    +breakpoint(sm)
+      margin-bottom: 0 
+      margin-top: 60px
+    .article-title
+      margin-bottom: 20px
+      h3
+        color: $preto
+        font-weight: 900
+        text-transform: uppercase
+        +font-size(22px)
+        line-height: 27px
+        &:before
+          content: ''
+          height: 3px
+          background-color: $vermelho
+          width: 64px
+          display: block
+          margin-bottom: 24.5px
+    
 .editor-content
   +font-size(16px)
   color: $preto
@@ -53,6 +86,13 @@ $vermelho: #EF383F
     +font-size(16px)
     line-height: 24px
     margin-bottom: 15px
+  
+  .dark-link
+    color: $preto
+    i, svg
+      color: $preto
+      margin-right: 3px
+      +font-size(18px)
 
 .section-cards
   ul
@@ -73,3 +113,68 @@ $vermelho: #EF383F
         p
           font-weight: 500
           color: $preto
+
+form
+  .input-text
+    margin-bottom: 25px
+    label
+      width: 100%
+      > span
+        display: block
+        width: 100%
+        input, textarea
+          padding: 10px 14px
+          width: 100%
+          font-family: $font-default
+          border: 1px solid #707070
+          +border-radius(5px)
+          &::placeholder
+            color: #919191
+  
+  .input-submit
+    label
+      position: relative
+      &:after
+        display: inline-block
+        content: ''
+        background-color: $vermelho
+        height: 1px
+        width: 20px
+        position: absolute
+        top: 24px
+        right: 45px
+        +default_transition()
+      &:hover
+        &:after
+          width: 25px
+          right: 40px
+      input
+        background-color: $transparent
+        border: 0
+        padding: 0
+        cursor: pointer
+        color: $vermelho
+        text-transform: uppercase
+        font-weight: 700
+
+  .wpcf7-not-valid-tip
+    font-family: $font-default
+    +font-size(14px)
+    font-weight: 700
+    margin-top: 5px
+  
+  .wpcf7-response-output
+    margin: 1rem 0 0 !important
+    padding: 1rem !important
+    +border-radius(5px)
+    text-align: center
+    border: 0 !important
+    font-family: $font-default
+    background-color: #eeeeee
+    
+.background-contato
+  background-size: cover
+  background-position: center
+  height: 600px
+  +breakpoint(sm)
+    background-attachment: fixed
