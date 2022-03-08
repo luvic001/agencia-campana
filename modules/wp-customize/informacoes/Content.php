@@ -47,3 +47,26 @@ $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'contato-emai
   'settings' => 'contato-email',
   'description' => 'Separe os e-mails com vírgula (,)'
 ]));
+
+// Redes Sociais
+
+$wp_customize->add_section('redes-sociais', [
+  'title' => 'Redes Sociais',
+  'panel' => $panel_name
+]);
+
+$rs = get_redes_sociais();
+
+foreach ($rs as $key => $label):
+
+  $setting = sprintf('rs-%s', $key);
+
+  $wp_customize->add_setting($setting);
+  $wp_customize->add_control(new WP_Customize_Control($wp_customize, $setting, [
+    'label' => $label,
+    'section' => 'redes-sociais',
+    'description' => sprintf('Informe a URL completa do perfil do %s', $label),
+    'settings' => $setting,
+  ]));
+
+endforeach;

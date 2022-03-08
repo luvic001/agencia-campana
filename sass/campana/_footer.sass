@@ -1,0 +1,87 @@
+footer.site-footer
+
+  .footer-content
+    background-color: #EF383F
+    padding: 80px 0
+
+  .footer-credits
+    background-color: #CE292F
+    p
+      color: $branco
+      +font-size(16px)
+      line-height: 24px
+      font-weight: 500
+      padding: 20px 1rem
+  
+  .menu-footer
+    border: 1px solid $branco
+    +border-radius(5px)
+    a.toggle-menu
+      height: 100%
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      color: $branco
+      padding: 13px 1rem
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-weight: 700
+      font-family: $font-default
+      &:hover
+        text-decoration: none
+      svg
+        +default_transition()
+        +transform(rotate(0deg))
+    &.active
+      .toggle-menu
+        svg
+          +transform(rotate(180deg))
+
+
+    .menu-content
+      padding: 1rem
+      display: none
+      ul
+        position: relative
+        li
+          margin-bottom: 10px
+          a
+            color: rgba($branco, .9)
+            +font-size(14px)
+            letter-spacing: 1px
+            +default_transition()
+            display: flex
+            align-items: flex-end
+            &:after
+              content: ''
+              width: 0
+              height: 1px 
+              margin-left: 5px
+              background-color: $branco
+              display: block
+              position: relative
+              +opacity(0)
+              +default_transition()
+            &:hover
+              text-decoration: none
+              color: $branco
+              &:after
+                width: 20px
+                +opacity(1)
+        &.sub-menu
+          margin-top: 10px
+          margin-left: 14px
+    
+  .redes-sociais
+    display: flex
+    li
+      margin-left: 1.5rem
+      &:first-child
+        margin-left: 0
+      a
+        i
+          color: $branco
+          +font-size(20px)
+          +breakpoint(md)
+            +font-size(24px)
