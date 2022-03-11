@@ -17,7 +17,7 @@ if ($section->title):
 
 ?>
 
-<section class="site-sections infoproduto">
+<section class="site-sections infoproduto" id="infoproduto">
   <style>
     <?php if ($section->background_mobile): ?>
       .site-sections.infoproduto {

@@ -17,7 +17,7 @@ if ($section->title):
 
 ?>
 
-<section class="site-sections marketing">
+<section class="site-sections marketing" id="marketing-digital">
   <style>
     <?php if ($section->background_mobile): ?>
       .site-sections.marketing {

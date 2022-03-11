@@ -6,7 +6,7 @@ $webdoor_background = get_field('webdoor-image');
 
 ?>
 
-<section class="site-webdoor">
+<section class="site-webdoor" id="inicio">
 
   <?php if ($webdoor_background): ?>
     <style>

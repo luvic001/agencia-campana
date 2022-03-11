@@ -13,7 +13,7 @@ $section = (object) [
 
 ?>
 
-<section class="site-sections">
+<section class="site-sections" id="quem-somos">
 
   <div class="container">
     <div class="row">

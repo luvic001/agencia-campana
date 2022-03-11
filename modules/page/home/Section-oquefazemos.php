@@ -12,7 +12,7 @@ $section = (object) [
 
 ?>
 
-<section class="site-sections white-section cases" id="cases">
+<section class="site-sections white-section cases" id="o-que-fazemos">
   <div class="container">
     
     <div class="section-title color-reverse centerized">

@@ -27,7 +27,7 @@ $section = (object) [
   </style>
 </div>
 
-<section class="site-sections section-contato">
+<section class="site-sections section-contato" id="contato">
 
   <div class="container">
     
