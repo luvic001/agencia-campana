@@ -19,7 +19,7 @@ $section = (object) [
 
 ?>
 
-<div class="background-contato background-parallax">
+<div class="background-contato">
   <style>
     .background-contato {
       background-image: url('<?= get_image('background-contato.png') ?>');
