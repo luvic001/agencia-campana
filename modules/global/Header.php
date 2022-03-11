@@ -9,6 +9,8 @@ $logo_alt = sprintf('%s | %s', $sitename, $sitedescription);
 
 ?>
 
+<?php get_modules('Megamenu') ?>
+
 <header class="site-header">
 
   <div class="d-flex justify-content-between align-items-center">
