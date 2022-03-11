@@ -1,0 +1,54 @@
+.isotope-switcher
+  margin-top: 70px
+  ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    +breakpoint(sm)
+      justify-content: center
+    li
+      margin-bottom: 1rem
+      margin-right: 1rem
+      +breakpoint(sm)
+        margin-bottom: 2rem
+        margin-right: 2rem
+      &:last-child
+        margin-right: 0
+      a
+        color: #444444
+        font-family: $font-default
+        text-transform: uppercase
+        font-weight: 500
+        letter-spacing: 1px
+        +default_transition()
+        +font-size(16px)
+        +breakpoint(sm)
+          +font-size(18px)
+        &:hover
+          text-decoration: none
+          color: $vermelho
+      
+      &.active
+        a
+          color: $vermelho
+
+.isotope-items
+  .isotope-item
+    margin-bottom: 2rem
+    a
+      display: block
+      position: relative
+      height: 28vw
+      +breakpoint(xs)
+        height: 155px
+      +breakpoint(sm)
+        height: 215px
+      +breakpoint(md)
+        height: 295px
+      +breakpoint(lg)
+        height: 345px
+      .case-background
+        background-size: cover
+        background-position: center
+        height: 100%
+        width: 100%

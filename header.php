@@ -28,6 +28,7 @@ global $TEMPLATE_DIRECTORY_URI;
   </style>
   <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/jQuery.min.js"></script>
   <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/bootstrap.min.js"></script>
+  <script src="<?= $TEMPLATE_DIRECTORY_URI ?>/js/isotope.pkgd.min.js"></script>
 
   <script>
     let site_url = '<?= site_url() ?>';
